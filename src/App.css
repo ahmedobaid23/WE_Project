@@ -1,0 +1,272 @@
+section#cyber-attacks li {
+  list-style-type: none;
+}
+body {
+  background-color: black;
+  color: white;
+  padding-top: 56px;
+}
+
+.blog-page-links {
+  text-decoration: none;
+}
+
+.blog-page-links:hover {
+  text-decoration: none;
+}
+
+.navbar-nav a,
+.red-underline-links {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  margin: 0px 2px;
+}
+
+.login-register {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  margin: 0px 2px;
+  padding: 5px;
+}
+
+.login-register:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-nav a:hover {
+  color: red;
+}
+
+.navbar-nav a:hover::after,
+.red-underline-links:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.indexSection {
+  height: 100vh;
+}
+
+#blog {
+  width: 75vw;
+  max-height: 80vh;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  overflow-y: auto;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.blog-form {
+  width: 100%;
+}
+
+.blog-inputs {
+  width: 100%;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+.departments {
+  padding-block: 80px;
+  background: black;
+}
+
+.departments-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.departments-list {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.departments-card {
+  background: white;
+  box-shadow: 5px 30px 50px hsla(0, 1%, 15%, 0.05);
+  max-width: 400px;
+  margin-inline: auto;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.departments-card .card-banner {
+  margin-bottom: 20px;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.departments-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2 ease-in-out;
+}
+
+.departments-card:hover img {
+  transform: scale(1.05);
+}
+
+.departments-card .card-title {
+  margin-bottom: 15px;
+}
+
+.departments-card .card-text {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.post-content a {
+  color: #dc3545 !important;
+  font-weight: lighter;
+}
+
+.post-content ul {
+  list-style: disc !important;
+  color: #dc3545 !important;
+}
+
+.edit-post-link {
+  color: inherit;
+}
+
+.edit-post-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.attacks-links {
+  text-decoration: none;
+  color: inherit;
+}
+
+.attacks-links:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 550px) {
+  .departments-card {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .departments-title {
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+  .departments-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .departments {
+    position: relative;
+    z-index: 1;
+  }
+
+  .departments {
+    top: 100px;
+    right: 0;
+    z-index: -1;
+  }
+
+  .departments-title {
+    max-width: 500px;
+  }
+
+  .departments-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .departments-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .small-pills {
+    margin-bottom: 30px;
+  }
+}
